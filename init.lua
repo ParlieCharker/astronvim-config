@@ -234,11 +234,11 @@ local config = {
     },
     -- use mason-lspconfig to configure LSP installations
     ["mason-lspconfig"] = { -- overrides `require("mason-lspconfig").setup(...)`
-      ensure_installed = { "sumneko_lua", "rust_analyzer", "gopls" },
+      ensure_installed = { "sumneko_lua", "rust_analyzer", "gopls", "yamlls" },
     },
     -- use mason-tool-installer to configure DAP/Formatters/Linter installation
     ["mason-tool-installer"] = { -- overrides `require("mason-tool-installer").setup(...)`
-      ensure_installed = { "prettier", "stylua", "intelephense" },
+      ensure_installed = { "prettier", "stylua", "intelephense", "yamllint" },
     },
     packer = { -- overrides `require("packer").setup(...)`
       compile_path = vim.fn.stdpath "data" .. "/packer_compiled.lua",
